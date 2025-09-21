@@ -475,7 +475,7 @@ const Home = () => {
               style={{ backgroundColor: "#F4F5F7" }}
             >
               <img
-                src={`http://localhost:5000${product.image}`}
+                src={`${import.meta.env.VITE_API_URL}${product.image}`}
                 alt={product.title}
                 className="w-full h-[301px] object-cover"
               />
