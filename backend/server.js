@@ -14,7 +14,9 @@ dotenv.config();
 const PORT = process.env.PORT
 app.use(cors(
   {           
-    origin: [process.env.CLIENT_URL],
+    origin: [process.env.CLIENT_URL,
+      process.env.PRODUCTION_URL
+    ],
     credentials: true,
   }
 ));
