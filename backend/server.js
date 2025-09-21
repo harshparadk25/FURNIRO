@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 dotenv.config();
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000;
 app.use(cors(
   {           
     origin: [process.env.CLIENT_URL,
