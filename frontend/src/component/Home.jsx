@@ -99,7 +99,7 @@ const Home = () => {
       price: Number(price) || 0,
       stock: Number(stock) || 0,
       description: description.trim(),
-      image: "/images/static.jpg",
+      image,
     };
     try {
       if (editingProduct) {
